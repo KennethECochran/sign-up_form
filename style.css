@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./assets/logo_background.jpeg);
+    background-position: left;
+    background-size: 36vw 100vh;
+    background-repeat: no-repeat;
+    background-color: #121212;
+}
+
+.logo_card{
+    position: absolute;
+    top: 16vh;
+    height: 20vh;
+    width: 36vw;
+    font-size: 6vw;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    height: 23vh;
+    margin-bottom: 1vh;
+}
+a{
+    color: white;
+}
+
+#credit{
+    color: white;
+    position: absolute;
+    left: 9vw;
+    top: 90vh;
+    font-size: 1vw;
+}
+
+.text-box{
+    position: relative;
+    left: 40vw;
+    color: white;
+    font-size: 3vw;
+}
