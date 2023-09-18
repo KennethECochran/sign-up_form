@@ -16,7 +16,7 @@ body{
     top: 16vh;
     height: 20vh;
     width: 36vw;
-    font-size: 6vw;
+    font-size: 5vw;
     background-color: rgba(0,0,0,0.8);
     color: white;
     display: flex;
@@ -28,6 +28,7 @@ img{
     height: 23vh;
     margin-bottom: 1vh;
 }
+
 a{
     color: white;
 }
@@ -40,9 +41,29 @@ a{
     font-size: 1vw;
 }
 
-.text-box{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 40vw;
+    left: 37vw;
     color: white;
-    font-size: 3vw;
+    font-size: 2rem;
+}
+
+button{
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    width: 16vw;
+    height: 8vh;
+    font-size: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    
 }
