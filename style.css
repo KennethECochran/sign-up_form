@@ -1,3 +1,8 @@
+:root{
+    --background-color: #121212;
+    --surface-color: #1F1A24;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@ body{
     background-position: left;
     background-size: 36vw 100vh;
     background-repeat: no-repeat;
-    background-color: #121212;
+    background-color: var(--background-color);
 }
 
 .logo_card{
@@ -41,29 +46,89 @@ a{
     font-size: 1vw;
 }
 
+#tagline{
+    position: relative;
+    top: 23vh;
+    font-size: 3vw;
+}
+
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
-    left: 37vw;
+    left: 36vw;
     color: white;
-    font-size: 2rem;
 }
 
 button{
     border-radius: 8px;
     background-color: cornflowerblue;
     width: 16vw;
-    height: 8vh;
-    font-size: 2rem;
+    height: 6vh;
+    font-size: 1.5rem;
+    position: relative;
+    top: 10vh;
+    left: 2vw;
 }
 
-form{
+.input-form{
+    background-color: var(--surface-color);
+    position: relative;
+    top: 30vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5vw;
+    width: 64vw;
+    height: 40vh;
+}
+
+.input-holder{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    
+    width: 50vw;
+    height: 40vh;
+    position: relative;
+    top: 3vh;
+}
+
+.left-row, .right-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-row{
+    position: relative;
+    left: 2vw;
+}
+
+.right-row{
+    position: relative;
+    right: 11vw;
+}
+
+input{
+    border-radius: 6px;
+    outline: none;
+    width: 15vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+input:focus{
+    outline: 3px solid #26F7FD;
+    border-radius: 6px;
+}
+
+input[type=password]{
+    outline: 3px solid red;
+    border-radius: 6px;
+}
+
+input[type=password]:valid{
+    border-radius: 6px;
+    outline: none;
 }
